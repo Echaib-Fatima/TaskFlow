@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TaskFlow - Settings</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/settings.css">
+</head>
+
+<body>
+
+    <div class="dashboard-layout">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="sidebar-logo">
+                Task<span>Flow</span>
+            </div>
+
+            <nav class="sidebar-nav">
+
+                <a href="dashboard.html">
+                    <span>▦</span>
+                    Dashboard
+                </a>
+
+                <a href="dashboard.html">
+                    <span>✓</span>
+                    My Tasks
+                </a>
+
+                <a href="#">
+                    <span>◔</span>
+                    Statistics
+                </a>
+
+                <a href="profile.html">
+                    <span>●</span>
+                    Profile
+                </a>
+
+                <a href="settings.html">
+                    <span>⚙</span>
+                    Settings
+                </a>
+
+            </nav>
+
+            <div class="sidebar-bottom">
+
+                <a href="index.html" class="logout">
+                    <span>↪</span>
+                    Logout
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="dashboard-main">
+
+            <div class="dashboard-top">
+
+                <div>
+                    <h1>Settings</h1>
+
+                    <p class="dashboard-subtitle">
+                        Customize your TaskFlow experience
+                    </p>
+                </div>
+
+            </div>
+
+
+            <section class="settings-section">
+
+
+                <!-- APPEARANCE -->
+                <div class="settings-card">
+
+                    <h2>Appearance</h2>
+
+                    <p class="settings-description">
+                        Customize how TaskFlow looks.
+                    </p>
+
+                    <div class="setting-item">
+
+                        <div class="setting-info">
+
+                            <h3>Dark Mode</h3>
+
+                            <p>
+                                Use a darker theme for a comfortable experience.
+                            </p>
+
+                        </div>
+
+                        <label class="toggle">
+
+                            <input
+                                type="checkbox"
+                                id="darkModeToggle"
+                            >
+
+                            <span class="toggle-slider"></span>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- NOTIFICATIONS -->
+                <div class="settings-card">
+
+                    <h2>Notifications</h2>
+
+                    <p class="settings-description">
+                        Manage your TaskFlow notifications.
+                    </p>
+
+                    <div class="setting-item">
+
+                        <div class="setting-info">
+
+                            <h3>Task Notifications</h3>
+
+                            <p>
+                                Receive reminders about your tasks.
+                            </p>
+
+                        </div>
+
+                        <label class="toggle">
+
+                            <input
+                                type="checkbox"
+                                id="notificationsToggle"
+                            >
+
+                            <span class="toggle-slider"></span>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DANGER ZONE -->
+                <div class="settings-card danger-zone">
+
+                    <h2>Danger Zone</h2>
+
+                    <p class="settings-description">
+                        These actions cannot be easily undone.
+                    </p>
+
+                    <div class="setting-item">
+
+                        <div class="setting-info">
+
+                            <h3>Clear All Tasks</h3>
+
+                            <p>
+                                Delete all tasks from your TaskFlow account.
+                            </p>
+
+                        </div>
+
+                        <button
+                            type="button"
+                            class="danger-button"
+                            id="clearTasksBtn"
+                        >
+                            Clear Tasks
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="js/settings.js"></script>
+
+</body>
+
+</html>

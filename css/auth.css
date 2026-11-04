@@ -1,0 +1,284 @@
+/* =========================
+   AUTH PAGE
+========================= */
+
+.auth-page {
+    min-height: calc(100vh - 75px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 50px 20px;
+
+    background:
+        radial-gradient(circle at top left, #eee9ff 0%, transparent 35%),
+        radial-gradient(circle at bottom right, #e9f4ee 0%, transparent 30%),
+        #f7f5fb;
+}
+
+
+/* =========================
+   AUTH CONTAINER
+========================= */
+
+.auth-container {
+    width: 100%;
+    max-width: 460px;
+
+    padding: 38px;
+
+    background: #ffffff;
+
+    border: 1px solid #ebe6f4;
+    border-radius: 18px;
+
+    box-shadow: 0 20px 50px rgba(78, 58, 120, 0.12);
+}
+
+
+/* =========================
+   AUTH HEADER
+========================= */
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.auth-header h1 {
+    color: #30283d;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.auth-header > p:last-child {
+    color: #777080;
+    font-size: 14px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+
+    color: #514a5e;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1px solid #ddd7e8;
+    border-radius: 9px;
+
+    background: #fcfbfe;
+
+    color: #30283d;
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+.form-group input::placeholder {
+    color: #aaa3b3;
+}
+
+.form-group input:focus {
+    border-color: #8067d8;
+
+    box-shadow:
+        0 0 0 3px rgba(128, 103, 216, 0.12);
+
+    background: #ffffff;
+}
+
+
+/* =========================
+   FORM OPTIONS
+========================= */
+
+.form-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 13px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    color: #716a7c;
+
+    cursor: pointer;
+}
+
+.remember input {
+    accent-color: #8067d8;
+}
+
+.forgot-password {
+    color: #8067d8;
+    font-weight: 600;
+}
+
+.forgot-password:hover {
+    color: #6951c2;
+}
+
+
+/* =========================
+   TERMS
+========================= */
+
+.terms {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+
+    color: #716a7c;
+
+    font-size: 13px;
+    line-height: 1.5;
+
+    cursor: pointer;
+}
+
+.terms input {
+    margin-top: 3px;
+    accent-color: #8067d8;
+}
+
+
+/* =========================
+   AUTH BUTTON
+========================= */
+
+.auth-btn {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #8067d8;
+    color: white;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.auth-btn:hover {
+    background: #6951c2;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(128, 103, 216, 0.25);
+}
+
+
+/* =========================
+   AUTH FOOTER
+========================= */
+
+.auth-footer {
+    margin-top: 25px;
+    padding-top: 20px;
+
+    border-top: 1px solid #eeeaf3;
+
+    text-align: center;
+}
+
+.auth-footer p {
+    color: #777080;
+    font-size: 13px;
+}
+
+.auth-footer a {
+    color: #8067d8;
+    font-weight: 700;
+}
+
+.auth-footer a:hover {
+    color: #6951c2;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 550px) {
+
+    .auth-page {
+        padding: 30px 15px;
+    }
+
+    .auth-container {
+        padding: 28px 22px;
+    }
+
+    .auth-header h1 {
+        font-size: 26px;
+    }
+
+    .form-options {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+.password-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.password-wrapper input {
+    width: 100%;
+    padding-right: 45px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+
+    font-size: 16px;
+    padding: 5px;
+}

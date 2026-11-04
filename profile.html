@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TaskFlow - Profile</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+
+<body>
+
+    <div class="dashboard-layout">
+
+        <!-- =========================
+             SIDEBAR
+        ========================== -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-logo">
+                Task<span>Flow</span>
+            </div>
+
+
+            <nav class="sidebar-nav">
+
+                <a href="dashboard.html">
+                    <span>▦</span>
+                    Dashboard
+                </a>
+
+                <a href="dashboard.html">
+                    <span>✓</span>
+                    My Tasks
+                </a>
+
+                <a href="#">
+                    <span>◔</span>
+                    Statistics
+                </a>
+
+                <a href="profile.html" class="active">
+                    <span>●</span>
+                    Profile
+                </a>
+
+                <a href="settings.html">
+                    <span>⚙</span>
+                    Settings
+                </a>
+
+            </nav>
+
+
+            <div class="sidebar-bottom">
+
+                <a href="index.html" class="logout">
+                    <span>↪</span>
+                    Logout
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =========================
+             MAIN CONTENT
+        ========================== -->
+
+        <main class="dashboard-main">
+
+            <!-- Top -->
+
+            <div class="dashboard-top">
+
+                <div>
+                    <h1>My Profile</h1>
+
+                    <p class="dashboard-subtitle">
+                        Manage your personal information
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- Profile -->
+
+            <section class="profile-section">
+
+                <div class="profile-card">
+
+                    <!-- Avatar -->
+
+                    <div class="profile-avatar-wrapper">
+
+    <div class="profile-avatar" id="profileAvatar">
+        U
+    </div>
+
+
+</div>
+
+
+                    <!-- User information -->
+
+                    <div class="profile-info">
+
+                        <h2 id="profileName">
+                            User Name
+                        </h2>
+
+                        <p id="profileEmail">
+                            user@email.com
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Account information -->
+
+                <div class="account-card">
+
+                    <div class="section-heading">
+                        <h2>Account Information</h2>
+                    </div>
+
+
+                    <div class="profile-form">
+
+                        <div class="profile-field">
+
+                            <label>
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="nameInput"
+                                readonly
+                            >
+
+                        </div>
+
+
+                        <div class="profile-field">
+
+                            <label>
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="emailInput"
+                                readonly
+                            >
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            class="primary-btn"
+                            id="editProfileBtn"
+                        >
+                            Edit Profile
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Account statistics -->
+
+                <div class="profile-stats">
+
+                    <div class="profile-stat">
+
+                        <span class="profile-stat-icon">
+                            ✓
+                        </span>
+
+                        <div>
+                            <p>Total Tasks</p>
+                            <h3 id="profileTotalTasks">
+                                0
+                            </h3>
+                        </div>
+
+                    </div>
+
+
+                    <div class="profile-stat">
+
+                        <span class="profile-stat-icon green">
+                            ✓
+                        </span>
+
+                        <div>
+                            <p>Completed</p>
+                            <h3 id="profileCompletedTasks">
+                                0
+                            </h3>
+                        </div>
+
+                    </div>
+
+
+                    <div class="profile-stat">
+
+                        <span class="profile-stat-icon orange">
+                            ◷
+                        </span>
+
+                        <div>
+                            <p>Pending</p>
+                            <h3 id="profilePendingTasks">
+                                0
+                            </h3>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="js/profile.js"></script>
+
+</body>
+
+</html>
